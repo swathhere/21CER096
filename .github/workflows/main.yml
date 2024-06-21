@@ -1,0 +1,17 @@
+name: Hello
+on: push
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print HAI
+        run: echo "HAi"
+      
+      - name: List all directories
+        run: ls
+
+      - name: Create a file
+        run: touch new.txt
+
+      - name: List all directories again
+        run: ls
